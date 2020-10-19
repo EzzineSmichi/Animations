@@ -1,0 +1,429 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Kite One', sans-serif;
+}
+
+header {
+    background-color: rgb(240, 239, 239);
+    position: relative;
+}
+
+
+
+header .logo img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+header .btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+header .max {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+header #topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header #topnav a {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(116, 112, 112);
+    -webkit-transition: 1.2s ease-in-out;
+    -o-transition: 1.2s ease-in-out;
+    transition: 1.2s ease-in-out;
+}
+
+header #topnav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.responsive {
+    display: none;
+}
+
+.navigation {
+    display: block;
+}
+
+
+main {
+    background-color: #ddd;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
+main .buttons button {
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: rgb(6, 91, 250);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+main .buttons #btn1 {
+    margin-right: 20px;
+}
+
+main .buttons button:hover {
+    -webkit-animation: button-hover .1s 5;
+            animation: button-hover .1s 5;
+} 
+
+main .buttons button:focus {
+    -webkit-animation: tour .5s;
+            animation: tour .5s;
+    background-color: rgb(117, 8, 241);
+}
+
+
+@-webkit-keyframes button-hover {
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    25%{
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+    }
+    50%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    75%{
+        -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+    }
+    100%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+
+@keyframes button-hover {
+    0%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    25%{
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+    }
+    50%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    75%{
+        -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+    }
+    100%{
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes tour{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25%{
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    50%{
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    75%{
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes tour{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    25%{
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    50%{
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    75%{
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+
+.content {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+
+
+main .content-img img {
+    border-radius: 15px;
+    height: 340px;
+    max-width: 400px;
+}
+
+
+.login, .registre {
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: none;
+    width: 400px;
+    height: 340px;
+}
+
+
+.login form div{
+    margin-bottom: 25px;
+}
+
+.login form .btn {
+    text-align: center;
+    margin-bottom: -25px;
+}
+
+.login form .btn button {
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgb(6, 91, 250);
+    font-weight: 700;
+    border: 2px solid #000;
+    color: #fff;
+}
+
+.login form .btn button:hover {
+    -webkit-animation: button-hover .1s 5;
+            animation: button-hover .1s 5;
+}
+
+.login form .btn button:focus {
+    -webkit-animation: tour .5s;
+            animation: tour .5s;
+}
+
+.login form div label{
+    display: inline-block;
+    width: 80px;
+    font-weight: 700;
+}
+
+.login form div input {
+    padding: 5px 10px;
+    border: 2px solid #000;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+
+
+.login form div input:active, .login form div input:focus {
+    border: 2px solid #ccc;
+    background-color: rgb(170, 163, 163);
+}
+
+
+.registre form div{
+    margin-bottom: 25px;
+}
+
+.registre form .btn {
+    text-align: center;
+    margin-bottom: -25px;
+}
+
+.registre form .btn button {
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: rgb(6, 91, 250);
+    font-weight: 700;
+    border: 2px solid #000;
+    color: #fff;
+}
+
+.registre form .btn button:hover {
+    -webkit-animation: button-hover .1s 5;
+            animation: button-hover .1s 5;
+}
+
+.registre form .btn button:focus {
+    -webkit-animation: tour .5s;
+            animation: tour .5s;
+}
+
+.registre form div label{
+    display: inline-block;
+    width: 80px;
+    font-weight: 700;
+}
+
+.registre form div input {
+    padding: 5px 10px;
+    border: 2px solid #000;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+
+
+.registre form div input:active, .registre form div input:focus {
+    border: 2px solid #ccc;
+    background-color: rgb(170, 163, 163);
+}
+
+
+footer {
+    padding: 15px;
+    background-color: rgb(240, 239, 239);
+    text-align: center;
+}
+
+.facebook, .youtube, .twitter{
+    display: none;
+}
+
+
+footer img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+@media screen and (min-width:780px) {
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    header .btn {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    header .max {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    #topnav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    #topnav li {
+        margin: 0 20px;
+    }
+
+    header #topnav a:hover{
+        background-color: unset;
+    }
+
+
+    footer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .facebook, .youtube, .twitter{
+        display: block;
+        
+    }
+}
